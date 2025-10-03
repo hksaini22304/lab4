@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab 4 - DOM Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="title">♡ My Gallery ♡</h1>
+    <p class="tagline">Click a thumbnail to change the big image</p>
+  </header>
+
+  <main class="gallery">
+    <figure class="stage" id="stage">
+
+      <img id="mainImage" src="images/lehenga.png" alt="Describe photo 1" />
+      <figcaption id="caption" class="caption">Woman in a lehenga</figcaption>
+
+      <div class="controls">
+        <button id="prevBtn" type="button">◀ Prev</button>
+        <button id="nextBtn" type="button">Next ▶</button>
+      </div>
+    </figure>
+
+   
+    <ul id="thumbList" class="thumbs">
+        <!-- Thumb 1 -->
+      <li class="thumb">
+        <img
+          src="images/cenotaph.png"
+          alt="The Royal Cenotaphs of India"
+          data-large="images/cenotaph.png"
+        />
+      </li>
+
+      <!-- Thumb 2 -->
+      <li class="thumb">
+        <img
+          src="images/tajmahal.png"
+          alt="The Taj Mahal in India"
+          data-large="images/tajmahal.png"
+        />
+      </li>
+
+      <!-- Thumb 3 -->
+      <li class="thumb">
+        <img
+          src="images/goldentemple.png"
+          alt="The Sikh Golden Temple in India"
+          data-large="images/goldentemple.png"
+        />
+      </li>
+
+      <!-- Thumb 4 -->
+      <li class="thumb">
+        <img
+          src="images/jaipur.png"
+          alt="City Palace of Jaipur in India"
+          data-large="images/jaipur.png"
+        />
+      </li>
+    </ul>
+  </main>
+
+  <footer class="site-footer">
+    <p id="footerText">© 2025 My Gallery • made with ☕ + 💖 by Harjot Kaur Saini</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+  
+  <noscript>
+    <p style="padding:1rem;">This gallery works best with JavaScript enabled.</p>
+  </noscript>
+  
+</body>
+</html>
